@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS importato da CDN che l'utente scaricherà in automatico -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- il tuo CSS va SEMPRE DOPO quello di Bootstrap -->
+    <style></style>
+    <title>Bootstrap intro</title>
+</head>
+
+<body>
+    <div class="alert alert-danger text-center mx-3 mt-4" role="alert">
+        MAI USARE MARGINI ORIZZONTALI IN GRIGLIE!
+    </div>
+    <!-- 1) un contenitore ci DEVE SEMPRE ESSERE attorno ad una griglia -->
+    <div class="container bg-info">
+        <h1>Titolo Principale</h1>
+
+        <!-- 2) la row - che ci suddivide lo spazio che lei ha in 12 spazi disponibili per essere presi dalle nostre colonne interne -->
+        <div class="row">
+            <!-- 3) singole colonne che specificano quanti spazi si prendono per ogni breakpoint -->
+            <!-- 1 elemento per riga a mobile, 2 elementi per riga a small, 3 elementi per riga a medium, 6 elementi per riga a large, e 12 elementi per riga (6 spazi vuoti)  -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning mb-1 mb-md-4 mb-lg-0">1</div>
+            <!-- ometterne uno o più (breakpoint) fa continuare il comportamento dell'ultimo specificato e attivo in quel momento -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning mb-1 mb-md-4 mb-lg-0">2</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning mb-1 mb-md-4 mb-lg-0">3</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning mb-1 mb-md-4 mb-lg-0">4</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning mb-1 mb-md-4 mb-lg-0">5</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning mb-1 mb-md-4 mb-lg-0">6</div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <img src="https://images.unsplash.com/photo-1708016376725-5136317572eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid" alt="" style="height: 300px; width: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid">
+    </div> -->
+
+
+    <!-- <div class="container d-lg-none">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 bg-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis earum
+                placeat rerum ex nobis quos laborum iste veritatis, nemo illo, similique culpa a sed iure? Ipsum
+                distinctio amet nemo! Cum!</div>
+            <div class="col-md-3 col-lg-2 bg-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                rerum
+                praesentium
+                soluta ipsa reiciendis minima id itaque sapiente voluptatum, recusandae assumenda expedita nihil. Enim
+                cupiditate asperiores dignissimos, consequuntur alias porro?</div>
+            <div class="col-md-3 col-lg-2 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                veniam
+                ipsa
+                saepe vitae illum repellat similique minus consectetur. Deserunt labore doloremque amet dicta similique
+                est aliquid voluptate doloribus aspernatur adipisci!</div>
+            <div class="col-md-3 col-lg-2 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                veniam
+                ipsa
+                saepe vitae illum repellat similique minus consectetur. Deserunt labore doloremque amet dicta similique
+                est aliquid voluptate doloribus aspernatur adipisci!</div>
+            <div class="col-md-3 col-lg-2 bg-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis earum
+                placeat rerum ex nobis quos laborum iste veritatis, nemo illo, similique culpa a sed iure? Ipsum
+                distinctio amet nemo! Cum!</div>
+            <div class="col-md-3 col-lg-2 bg-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                rerum
+                praesentium
+                soluta ipsa reiciendis minima id itaque sapiente voluptatum, recusandae assumenda expedita nihil. Enim
+                cupiditate asperiores dignissimos, consequuntur alias porro?</div>
+        </div>
+    </div> -->
+
+    <!-- JavaScript di Bootstrap - per il funzionamento degli elementi interattivi -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --main-color: rgb(98, 10, 127)
+        }
+
+        main {
+            background-color: var(--main-color);
+        }
+
+        button {
+            font-size: 2rem;
+            background-color: black;
+            color: var(--main-color)
+        }
+
+        button:hover {
+            --main-color: yellow;
+        }
+
+        footer {
+            --main-color: red;
+
+            /* background-color: var(--main-color); */
+        }
+    </style>
+
+
+    <title>Bootstrap 1</title>
+</head>
+
+<body>
+    <main>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet soluta laborum, molestiae voluptate et
+            quam nobis, accusantium nulla asperiores repellendus doloribus molestias quaerat amet quibusdam.
+            Necessitatibus ad beatae maiores explicabo.</h1>
+    </main>
+    <button>Click me</button>
+
+    <article style="--main-color: blue">
+        <button>Click me</button>
+    </article>
+
+    <footer>
+        <button>Click me</button>
+    </footer>
+</body>
+
+</html>
